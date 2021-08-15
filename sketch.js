@@ -11,7 +11,7 @@ var gameOverImg,restartImg
 var jumpSound , checkPointSound, dieSound
 
 function preload(){
-  subwaySurferImg = loadImage("subwaySurfer-removebg-preview.png.png");
+  subwaySurferImg = loadImage("subwaySurfer-removebg-preview.png");
   
   //groundImage = loadImage("ground2.png");
   
