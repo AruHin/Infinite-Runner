@@ -11,13 +11,13 @@ var gameOverImg,restartImg
 var jumpSound , checkPointSound, dieSound
 
 function preload(){
-  subwaySurferImg = loadImage("subwaySurfer.png");
+  subwaySurferImg = loadImage("subwaySurfer-removebg-preview.png.png");
   
   //groundImage = loadImage("ground2.png");
   
   //cloudImage = loadImage("cloud.png");
   
-  obstacle1 = loadImage("spiky.png");
+  obstacle1 = loadImage("spiky-removebg-preview.png");
   
   
   //restartImg = loadImage("restart.png")
@@ -38,7 +38,7 @@ function setup() {
   subwaySurfer.addImage("subwaySurfer", subwaySurferImg);
   
 
-  subwaySurfer.scale = 0.5;
+  subwaySurfer.scale = 0.3;
   
   ground = createSprite(200,displayHeight-50,400,20);
   //ground.addImage("ground",groundImage);
@@ -53,7 +53,7 @@ function setup() {
  
   gameOver.scale = 0.5;
   restart.scale = 0.5;
-  obstacle1.scale = 0.5;
+  obstacle1.scale = 0.3;
   invisibleGround = createSprite(200,displayHeight-40,400,10);
   invisibleGround.visible = false;
   
@@ -186,7 +186,7 @@ function spawnObstacles(){
     }
    
     //assign scale and lifetime to the obstacle           
-    obstacle.scale = 0.5;
+    obstacle.scale = 0.3;
     obstacle.lifetime = 300;
    
    //add each obstacle to the group
